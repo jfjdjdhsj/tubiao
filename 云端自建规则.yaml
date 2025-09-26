@@ -1,0 +1,125 @@
+  #全部节点
+  - PROCESS-NAME,com.google.android.youtube,全部节点
+  - PROCESS-NAME,app.rvx.android.youtube,全部节点
+  - DOMAIN-SUFFIX,missav.fans,全部节点
+  - DOMAIN-SUFFIX,91porn.com,全部节点
+  - DOMAIN-SUFFIX,hanime1.me,全部节点
+  - DOMAIN-KEYWORD,hembed,全部节点
+  - PROCESS-NAME,com.example.flutter_sf113,全部节点
+  - PROCESS-NAME,com.comic.bzmh202506251450788786666,全部节点
+  - DOMAIN-SUFFIX,18comic.vip,全部节点
+  
+  
+  #国内
+  - DOMAIN-SUFFIX,www.zfyidc.com,国内
+  - IP-CIDR,156.239.235.110/32,国内
+  - DOMAIN-SUFFIX,shouji.sogou.com,国内
+  - DOMAIN-KEYWORD,dandanplay,国内
+  - DOMAIN-SUFFIX,api.dandanplay.net,国内
+  - DOMAIN-SUFFIX,www.123865.com,国内 
+  - DOMAIN-SUFFIX,yun.daxiaamu.com,国内     
+  - DOMAIN-KEYWORD,xxooo,国内
+  - DOMAIN-KEYWORD,wogg,国内
+  - DOMAIN-KEYWORD,lanzoub,国内
+  
+  
+  #AI
+  - PROCESS-NAME,ai.x.grok,AI
+  - PROCESS-NAME,com.openai.chatgpt,AI
+  - DOMAIN-KEYWORD,gemini,AI
+  - DOMAIN-SUFFIX,gemini.google.com,AI
+  
+  
+  #tiktok
+  - PROCESS-NAME,com.zhiliaoapp.musically,tiktok     
+  - PROCESS-NAME,com.ss.android.ugc.trill,tiktok
+  - RULE-SET,tiktok,tiktok
+  
+  
+  #instagram
+  - PROCESS-NAME,com.instagram.android,Instagram
+  - RULE-SET,Instagram,Instagram
+  #bing
+  - DOMAIN-SUFFIX,bing.com,bing
+  - DOMAIN-KEYWORD,bing,bing
+  
+  
+  #谷歌商店
+  - PROCESS-NAME,app.revanced.android.gms,谷歌商店
+  - PROCESS-NAME,com.android.vending,谷歌商店  
+  - DOMAIN-KEYWORD,play.google,谷歌商店
+  - DOMAIN-KEYWORD,google,谷歌商店
+  
+  
+  #Google
+  - DOMAIN-KEYWORD,google,Google  
+  
+  
+  #EMBY
+  - DOMAIN-KEYWORD,emby,EMBY
+  - IP-CIDR,193.122.114.13/32,EMBY
+  - DOMAIN-SUFFIX,tv.worldline.space,EMBY
+  - DOMAIN-SUFFIX,cf.sfcj.org,EMBY
+  - DOMAIN-SUFFIX,su.viclub.top,EMBY                         
+  - DOMAIN-SUFFIX,cf.lilyemby.my,EMBY
+  - DOMAIN-SUFFIX,hkb-emby.aliz.work,EMBY
+  - DOMAIN-SUFFIX,eggtartemby.itsmyduty.top,EMBY
+  - DOMAIN-SUFFIX,us.nanflix.net,EMBY
+  - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com,EMBY
+  - DOMAIN-SUFFIX,lite.saturdayvideo.top,EMBY
+  - DOMAIN-SUFFIX,emby.wenjian.de,EMBY
+  - DOMAIN-SUFFIX,onatoshi.114514.quest,EMBY
+  - DOMAIN-SUFFIX,super.yezi.my,EMBY
+  - DOMAIN-SUFFIX,jsq.mooguu.xyz,EMBY
+  - DOMAIN-SUFFIX,misty.cx,EMBY
+  - DOMAIN-SUFFIX,a.emby.my,EMBY
+  - DOMAIN-SUFFIX,emby3.69yun69.com,EMBY
+  - DOMAIN-SUFFIX,emby.69yun69.com,EMBY
+  - DOMAIN-SUFFIX,embyplus.org,EMBY
+  - DOMAIN-SUFFIX,media.nijigem.by,EMBY
+  - DOMAIN-SUFFIX,play.charontv.com,EMBY
+  - DOMAIN-SUFFIX,emby.bangumi.ca,EMBY
+  - DOMAIN-SUFFIX,tanhuatv.site,EMBY  
+  - DOMAIN-SUFFIX,ciallo.party,EMBY  
+  - DOMAIN-SUFFIX,makima.online,EMBY
+  - DOMAIN-SUFFIX,313445.xyz,EMBY
+  - DOMAIN-SUFFIX,stream.synn.cc,EMBY
+  - DOMAIN-SUFFIX,cf.5msky.com,EMBY
+  - DOMAIN-SUFFIX,emby.feiniu.lol,EMBY
+  - DOMAIN-SUFFIX,ciallo.party,EMBY
+  - DOMAIN-SUFFIX,dongman.theluyuan.com,EMBY
+  - DOMAIN-SUFFIX,kfc.v50.su,EMBY
+  
+  
+  #Aurora Store
+  - PROCESS-NAME,com.aurora.store,Aurora Store
+  
+  
+  #广告  
+  - RULE-SET,秋风广告规则,广告
+  - GEOSITE,category-ads-all,广告
+  - DOMAIN-SUFFIX,c.sm.cn,广告
+  - DOMAIN-SUFFIX,hcadv.video.ums.uc.cn,广告
+  - DOMAIN-SUFFIX,bf13n.top,广告
+  - DOMAIN-SUFFIX,down-update.qq.com,广告
+  - DOMAIN-SUFFIX,adukwai.com,广告
+  - DOMAIN-SUFFIX,d14ospzm4ai1rr.cloudfront.net,广告  
+  - DOMAIN-SUFFIX,y1mvh039.top,广告  
+  - PROCESS-NAME,com.gameloft.android.ANMP.GloftGGHM,广告  #手机管家   
+  - PROCESS-NAME,com.coloros.phonemanager,广告   
+  
+  
+  #游戏软件代理
+  - PROCESS-NAME,com.olzhas.carparking.multyplayer2,游戏软件代理
+  - PROCESS-NAME,com.jmbbs2025,游戏软件代理
+  - PROCESS-NAME,com.google.earth,游戏软件代理
+  - PROCESS-NAME,moe.tarsin.ehviewer,游戏软件代理
+  - PROCESS-NAME,com.ea.games.r3_row,游戏软件代理
+  - PROCESS-NAME,com.MadOut.BIG,游戏软件代理    
+  - PROCESS-NAME,com.tencent.ig,游戏软件代理
+  - PROCESS-NAME,com.carxtech.sr,游戏软件代理
+  - PROCESS-NAME,com.olzhas.carparking.multyplayer,游戏软件代理
+  
+  
+  #telegram
+  - DOMAIN-SUFFIX,api.telegram.org,Telegram
