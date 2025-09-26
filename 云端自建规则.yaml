@@ -33,12 +33,12 @@
   #tiktok
   - PROCESS-NAME,com.zhiliaoapp.musically,tiktok     
   - PROCESS-NAME,com.ss.android.ugc.trill,tiktok
-  - RULE-SET,tiktok,tiktok
   
   
   #instagram
   - PROCESS-NAME,com.instagram.android,Instagram
-  - RULE-SET,Instagram,Instagram
+
+  
   #bing
   - DOMAIN-SUFFIX,bing.com,bing
   - DOMAIN-KEYWORD,bing,bing
@@ -96,7 +96,6 @@
   
   
   #广告  
-  - RULE-SET,秋风广告规则,广告
   - GEOSITE,category-ads-all,广告
   - DOMAIN-SUFFIX,c.sm.cn,广告
   - DOMAIN-SUFFIX,hcadv.video.ums.uc.cn,广告
