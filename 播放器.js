@@ -18,6 +18,7 @@
     const PLAYER_ID = 'gm-floating-video-player';
     const TOGGLE_ID = 'gm-video-toggle-button';
     const DRAG_BUTTON_ID = 'gm-drag-handle-btn'; 
+    const DOWNLOAD_BUTTON_ID = 'gm-download-btn'; // 新增：下载按钮ID
     const LONG_PRESS_DELAY = 300; 
 
     // 默认播放器尺寸参数
@@ -137,6 +138,10 @@
         }
         #${PLAYER_ID} #copy-btn {
             background-color: #00A86B; 
+            color: white;
+        }
+        #${PLAYER_ID} #${DOWNLOAD_BUTTON_ID} { /* 新增：下载按钮样式 */
+            background-color: #2196F3; /* 蓝色 */
             color: white;
         }
         #${PLAYER_ID} .close-btn {
@@ -495,6 +500,7 @@
                 <div class="control-group">
                     <span id="speed-btn" class="custom-btn" title="点击切换播放速度">x1.0</span>
                     <span id="like-btn" class="custom-btn" style="font-size: 16px;" title="点赞/收藏">🤍</span>
+                    <span id="${DOWNLOAD_BUTTON_ID}" class="custom-btn" title="下载视频">下载视频</span> <!-- 新增：下载按钮 -->
                     <span id="copy-btn" class="custom-btn" title="复制视频链接">复制链接</span>
                     <span class="close-btn" title="关闭并暂停视频">✕</span>
                 </div>
@@ -522,6 +528,7 @@
         const speedBtn = document.getElementById('speed-btn');
         const likeBtn = document.getElementById('like-btn');
         const copyBtn = document.getElementById('copy-btn');
+        const downloadBtn = document.getElementById(DOWNLOAD_BUTTON_ID); // 获取下载按钮
         let currentSpeed = 1.0;
         let isLiked = false;
 
@@ -558,6 +565,21 @@
         });
         copyBtn.addEventListener('click', () => {
             copyVideoUrl(videoUrlCache, copyBtn);
+        });
+        
+        // 新增：下载按钮事件监听
+        downloadBtn.addEventListener('click', () => {
+            if (videoUrlCache) {
+                // 对于直接的视频文件（如mp4, webm），这通常会触发浏览器下载。
+                // 对于M3U8链接，它将下载M3U8清单文件本身，而不是视频流。
+                window.open(videoUrlCache, '_blank');
+                downloadBtn.textContent = '下载中...';
+                setTimeout(() => {
+                    downloadBtn.textContent = '下载视频';
+                }, 2000);
+            } else {
+                alert("没有可下载的视频链接。");
+            }
         });
 
         // 最后播放视频
